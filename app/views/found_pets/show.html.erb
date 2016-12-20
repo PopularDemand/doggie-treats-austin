@@ -1,0 +1,16 @@
+<table class='table table-striped table-bordered'>
+  <td>
+    <%= image_tag scraped_image(@pet.image.url) %>
+  </td>
+  <td>
+    <ul>
+      <li><%= @pet.type %></li>
+      <li><%= @pet.looks_like %></li>
+      <li><%= format_address(@pet.location.human_address) %></li>
+      <li><%= @pet.intake_date %></li>
+      <li><%= @pet.color %></li>
+      <li><%= @pet.sex %></li>
+      <li><%= @pet.age %></li>
+    </ul>
+  </td>
+</table>

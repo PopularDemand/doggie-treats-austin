@@ -1,9 +1,15 @@
-<h1>StaticPages#home</h1>
-<%# nil.ok %>
-<p>Find me in app/views/static_pages/home.html.erb</p>
-
-<%= image_tag 'https://maps.googleapis.com/maps/api/staticmap?center=Austin,TX&zoom=13&size=600x300&maptype=roadmap&markers=color:red%7Clabel:S%7C30.26424,-97.755943&key=AIzaSyCWIXoFdSyj7_51JxVihFCUCfnOC4E5qkU' %>
-
-<br>
-
-<%= image_tag map(30.26424,-97.755943) %>
+<div class="row">
+  <h1>Welcome to Doggie Treats!</h1>
+  <p>Home for Austin Dog Lovers</p>
+  <h3>What we offer:</h3>
+  <ul>
+    <li>
+      <p>A <%= link_to 'curated list', dog_parks_path %> of local off-leash parks</p>
+    </li>
+    <li>
+      <p><%= link_to 'Found dogs', found_pets_path %> picked up by Austin Animal Center</p>
+    </li>
+  </ul>
+</div>
+<p>Servicing the Austin Metro Area since 2016</p>
+<%= image_tag 'https://maps.googleapis.com/maps/api/staticmap?center=Austin,TX&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyCWIXoFdSyj7_51JxVihFCUCfnOC4E5qkU' %>

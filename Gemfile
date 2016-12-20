@@ -37,6 +37,7 @@ gem 'binding_of_caller'
 gem 'simple_form'
 gem 'figaro'
 gem 'geocoder'
+gem 'mechanize'
 
 # Socrata open data
 gem 'soda-ruby', :require => 'soda'

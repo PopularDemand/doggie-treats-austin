@@ -9,4 +9,8 @@ module FoundPetsHelper
     zip = full[3]
     "#{street}, #{city}, TX, #{zip}"
   end
+
+  def scraped_image(url)
+    Scraper.new.get_image(url)
+  end
 end

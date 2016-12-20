@@ -12,6 +12,11 @@ class FoundPetsAPI
     @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => "type = 'Dog'"})
   end
 
+  def select(id)
+    query = "animal_id = '#{id}'"
+    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => query})[0]
+  end
+
   def cats
     @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => "type = 'Cat'"})
   end
