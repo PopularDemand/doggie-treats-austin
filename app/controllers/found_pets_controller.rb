@@ -1,8 +1,8 @@
 class FoundPetsController < ApplicationController
   def index
-    filter = determine_filter
-    pets = FoundPetsAPI.new.send(filter)
-    @pets = pets.paginate(page: params[:page], per_page: 5)
+    @filter = determine_filter
+    pets = FoundPetsAPI.new.send(@filter)
+    @pets = pets.paginate(page: params[:page], per_page: 10)
     @select_options = [["Dogs", :dog], ["Cats", :cat], ["All", :pets]]
   end
 

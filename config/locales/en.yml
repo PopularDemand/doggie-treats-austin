@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  time:
+   formats:
+    M_d_timestamp: '%b. %d'

@@ -53,4 +53,28 @@
 
 
 
-//*** Dog Parks ***//
+//*** Found Pets ***//
+
+.found-pets {
+  h2 {
+    display: inline-block;
+  }
+  .pagination {
+    letter-spacing: 4px;
+    display: inline-block;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .filter-options {
+    display: inline;
+    margin-left: 15px;
+    word-spacing: 20px;
+  }
+  p {
+    display: inline-block;
+    margin-left: 100px;
+  }
+}
