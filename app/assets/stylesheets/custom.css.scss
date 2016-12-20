@@ -1,6 +1,7 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
+// Top Nav
  .main-nav {
   background-color: #F0E68C;
   border-radius: 0;
@@ -16,6 +17,8 @@
       display: inline-block;
       margin-top: -4px;
     }
+    color: #4F7F8C;
+    font-weight: 700;
   }
   .navbar-text {
     margin: 10px 15px;
@@ -26,9 +29,27 @@
     padding: 0;
     li {
       float: right;
+      text-align: center;
+      padding: 9px 0;
       a {
         display: inline-block;
+        padding: 0;
+        width: 115px;
+        color: #333;
+        font-size: 18px;
+        border-left: 1px solid #555;
+        &:hover {
+          color: #000;
+        }
       }
     }
   }
 }
+
+//*** Dog Parks ***//
+// Show
+
+
+
+
+//*** Dog Parks ***//

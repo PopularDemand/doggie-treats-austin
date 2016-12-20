@@ -1,0 +1,13 @@
+<%= link_to '< back', dog_parks_path %>
+
+<div class="left-column col-sm-4">
+  <h2><%= @dog_park.name %></h2>
+  <address>
+    <p class='street-name'><%= @dog_park.street %></p>
+    <p><%= @dog_park.city %>, TX <%= @dog_park.zip %></p>
+  </address>
+</div>
+
+<div class="left-column col-sm-8">
+  <%= image_tag map(@dog_park.latitude, @dog_park.longitude) %>
+</div>
