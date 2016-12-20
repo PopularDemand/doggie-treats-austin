@@ -1,0 +1,18 @@
+
+
+<nav class='navbar navbar-inverse main-nav'>
+
+    <%= link_to home_path, class: "navbar-brand" do %>
+      <%= image_tag("dog-bone.png", options={}) %>
+      Doggie Treats
+    <% end %>
+    <ul class='nav navbar-nav nav-ul'>
+      <li>
+        <%= link_to 'Found Pets', found_pets_path %>
+      </li>
+      <li>
+        <%= link_to 'Dog Parks', dog_parks_path %>
+      </li>
+    </ul>
+
+</nav>
