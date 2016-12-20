@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: opendata
+  port: 5433
+
+production:
+  <<: *default
+
+test:
+  <<: *default
+  database: opendata-test
+  port: 5433
