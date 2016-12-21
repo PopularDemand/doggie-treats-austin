@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources 'dog_parks', only: [:show]
   get 'found_pets/index', as: 'found_pets'
   get 'found_pets/show', as: 'found_pet'
+  get 'strays/index', as: 'strays'
+  get 'strays/show', as: 'stray'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

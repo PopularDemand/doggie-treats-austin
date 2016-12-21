@@ -28,8 +28,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 75%;
   li {
-    float: right;
+    float: left;
     text-align: center;
     padding: 9px 0;
     a {
@@ -44,11 +45,29 @@
       }
     }
   }
+  .right-nav { 
+    float: right;
+    color: #000;
+    padding-left: 15px;
+    &:hover {
+      color: #F0E68C;
+    }
+  }
 }
 
 
 //*** Dog Parks ***//
-// Show
+// index
+
+dt {
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 35px;
+}
+dd {
+  font-size: 14;
+  margin-left: 15px;
+}
 
 
 

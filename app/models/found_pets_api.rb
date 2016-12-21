@@ -5,11 +5,11 @@ class FoundPetsAPI
   end
 
   def pets
-    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json')
+    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json').reverse!
   end
 
   def dogs
-    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => "type = 'Dog'"})
+    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => "type = 'Dog'"}).reverse!
   end
 
   def select(id)
@@ -18,6 +18,6 @@ class FoundPetsAPI
   end
 
   def cats
-    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => "type = 'Cat'"})
+    @fetcher.get('https://data.austintexas.gov/resource/hye6-gvq2.json', {"$where" => "type = 'Cat'"}).reverse!
   end
 end
